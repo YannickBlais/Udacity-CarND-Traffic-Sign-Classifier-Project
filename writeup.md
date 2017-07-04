@@ -22,5 +22,8 @@
 
 **Test a Model on New Images**
 * The new images found on the Internet are shown in the .ipynb file, at the "Load and Output the Images" section. The images are not actually aprticularly difficult except maybe for the roundabout signt that is tilted and had some website info on top of it.
-* The final result is 100%, meaning that all signs were classified correctly. The test set had a performance of XXX%.
-* 
+* The final result is 80%, meaning that all but one signs were classified correctly. The test set had a performance of 94.9%.
+* The probalities calculated for each class appears quite strong for "Road work", "general caution" and "no entry" signs. Their respective highest scores are almost all twice the second best score. The "roundabout mandatory" and "keep right" signs however have less of a distance to their second best score which makes them suceptible to failures and the former indeed failed.
+
+**Neural Network Layers Visualization**
+* Images from convolutiona layers are displayed in the last section. While the images for the first convolutional layer look more or less like the sample given (road work), it is difficult to find any pattern in the images for the second layer.
