@@ -8,8 +8,8 @@
 * Exploratory Visualization -> See Traffic_Sign_Classifier.ipynb, "Include an exploratory visualization of the dataset" section
 
 **Design and Test a Model Architecture**
-* The preprocessing consists of image normalization, i.e. with mean of zero and unit norm => pixel values ranging between -1.0 and +1.0. This technique is of course useful to help Tensorflow converge faster.
-* The Model Architecture is of course similar to LeNet architecture. The modifications I brought to this model are<br>
+* The preprocessing consists of image normalization, i.e. with mean of zero and unit norm => pixel values ranging between -1.0 and +1.0. This technique is useful to help Tensorflow converge faster.
+* The Model Architecture is similar to LeNet architecture. The modifications I brought to this model are<br>
 &nbsp;&nbsp;&nbsp;&nbsp;1- Doubling the number of features calculated at every convolutional layer. Therefore the first convolutional layer uses a [5x5] kernel with a depth of 3 as input and a depth of 12 in output. Same goes for the second convolutional layer which uses a [5x5] kernel with a depth of 12 in input and 32 in output.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;2- Expansion of the fully connected layers with the first layer having 800 inputs, 240 outputs and the second layer having 240 inputs and 168 outputs.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;3- Perform dropout at the fully connected layer, using 0.5 as keep probability during training and 1.0 during evaluation
